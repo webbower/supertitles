@@ -1,0 +1,86 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#video-select {
+    border: 1px solid #666;
+    background-color: #F2F2F2;
+    width: 480px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#video-select:before {
+    content: 'Click to select a video';
+}
+
+#video-select input[type=file]{
+    display: none;
+}
+
+#video-player {
+    position: relative;
+}
+
+/*#block-actions,
+#video-player,
+#subtitle-entries {
+    display: none;
+}*/
+
+#video-timer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#block-actions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+#subtitle-entries {
+}
+
+#video-viewport {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#video-viewport.has-video {
+    cursor: default;
+    width: auto;
+    height: auto;
+    border: 0;
+    background: transparent;
+}*/
+/*#video-viewport.has-video:before {
+    content: none;
+}*/
+
+/*#video-viewport.has-video + #subtitle-entries,
+#video-viewport.has-video #video-player,
+#video-viewport.has-video #block-actions {
+    display: block;
+}*/
